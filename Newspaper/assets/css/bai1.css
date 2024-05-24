@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1000px;
+    margin: 30px  auto;
+    border: 2px gray;
+    
+}
+.menu{
+    border: 1px gray solid;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    
+}
+nav ul{
+    display: flex;
+    background-color: white;
+    height: 50px;
+    align-items: center;
+    justify-content: left;
+    
+}
+nav ul li {
+    list-style: none;
+    height: 50px;
+    border: 1px gray;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 0 20px 0 0 ;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+  
+}
+nav ul li a:hover{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.article{
+    display: flex;
+    justify-content: center;
+}
+.content1{
+    width: 50%;
+    padding-right: 30px;
+}
+.content1 img{
+    width: 100%;
+}
+.content1 span{
+    font-weight:bold;
+    font-size: 25px;
+}
+.content1 p{
+    padding-top: 15px;
+    color: gray;
+    line-height: 25px;
+}
+
+.content2{
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 1px solid gray;
+    border-bottom: none;
+    border-top: none;
+    width: 20%;
+    text-align: left;
+}
+.content2 img{
+    width: 100%;
+
+}
+.content2 p{
+    font-weight: bold;
+    padding: 10px 0;
+}
+.hr1{
+    margin: 10px auto;
+}
+ .hr{
+    margin : 10px ;
+}
+
+.block2{
+    display: flex;
+    padding-bottom: 20px;
+    justify-content:space-between;
+    
+}
+.content3{
+    width: 30%;
+}
+.content3 img{
+    width: 30%;
+    padding-right: 10px;
+}
+.block2 p{
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.fa-comment{
+    color: red;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+    .article{
+        display: block;
+    }
+    .content1, .content2, .content3 {
+      width: 100%;
+    }
+  }

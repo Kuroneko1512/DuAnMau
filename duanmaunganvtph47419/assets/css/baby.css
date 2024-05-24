@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo img{
+    width: 55%;
+}
+.dangnhapuser .logo img{
+    width: 80%;
+}
+.stuff{
+    display: flex;
+}
+.user{
+    display: flex;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.user1{
+    display: flex;
+    border: 1px solid orange;
+    border-radius: 5px;
+    background-color: #FFF9E3;
+    padding: 7px;
+}
+.user1 p{
+    font-family: roboto;
+    font-size: 15px;
+    padding-right: 10px;
+}
+.user p{
+    font-family: roboto;
+    font-size: 15px;
+    padding-right: 10px;
+}
+header form .search{
+    width: 400px;
+    height: 35px;
+    border: 1px solid white;
+    position: relative;
+}
+header form .search input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 10px;
+    background-color: #F4F4F4;
+    border-radius: 7px;
+}
+header form .search button{
+    border: none;
+    position: absolute;
+    top: 33%;
+    right: 15px;
+}
+.fa-search{
+    margin: 5%;
+}
+.menu{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+} 
+nav ul .parent .fa-angle-down{
+    padding-left: 5px ;
+    font-size: 16px;
+    font-weight: bold;
+}
+nav ul li{
+    list-style: none;
+    align-items: center;
+    height: 50px;
+    padding: 0 13px;
+}
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: #58595B;
+    font-family: roboto;
+    font-size: 15px;
+}
+.parent{
+    position: relative;
+}
+.child{
+    position: absolute;
+    z-index: 999999;
+    top: 50px;
+    height: auto;
+    width: 250px;
+    display: block;
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    border: 1px solid #EBEBEB ;
+    border-top: none;
+    box-shadow: 0 0 1px gray;
+    text-align: left;
+    color: black;
+    font-family: roboto;
+}
+.parent:hover .child{
+    opacity: 1;
+    visibility: visible;
+}
+.parent a:hover{
+    color: #F1CBB8;
+}
+.child li {
+    display: block;
+    height: 45px;
+}
+.child .first{
+    border-top: 2px solid #F2AD72;
+}
+.child li a{
+    color: black;
+    font-size: 13px;
+}
+.child li a:hover{
+    color: #F2AD72;
+    font-family: roboto;
+    font-weight: bold;
+}
+.child li:hover{
+    background-color: #FEFAF1;
+}
+.banner .active img{
+    width: 100%;
+}
+.dangnhapuser{
+    border: 1px solid #fff;
+    border-radius: 10px;
+    /* margin: 50px auto; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    /* top: 50%;
+    left: 50%; */
+    background: grey;
+    z-index: 999;
+    /* transform: translate(-50%, -50%); */
+    
+}
+.dangnhapuser .logo{
+    border-right: 1px solid #E1E1E1;
+    width: 20%;
+   margin: 20px 0 20px 20px;
+}
+.dangnhapuser .logo button{
+    width: 200px;
+    margin: 20px 10px 0 10px;
+    height: 40px;
+    background-color: #F7F7F7;
+    border: none;
+}
+.dangnhapuser .logo .dangky{
+    width: 200px;
+    height: 40px;
+    background-color: #ffffff;
+}
+.dangnhapuser .logo a{
+   text-decoration: none;
+    color: black;
+}
+.dangnhapuser .login{
+    width: 700px;
+    margin: 50px auto;
+}
+.dangnhapuser .login input{
+    width: 100%;
+    height: 45px;
+    margin: 10px 0;
+    padding-left: 15px;
+}
+.dangnhapuser .login p{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: roboto;
+    text-align: center;
+    color:#58595B ;
+}
+form{
+    font-size: 15px;
+    font-family: roboto;
+}
+form .button{
+    background-color: #58595B;
+    border: none;
+    color: #ffffff;
+}
+.dangnhapuser .close{
+    font-size: 30px;
+    margin: 30px;
+    color: #58595B;
+    cursor: pointer;
+}
+
+.content{
+    width: 100%;
+    background-color: #F4F4F4;
+}
+.intro{
+    margin: 35px auto;
+    width: 45%;
+}
+.intro .nous{
+    font-size: 25px;
+    font-weight: bold;
+    color: #58595B;
+    margin: 8px 0;
+    text-align: center;
+}
+.intro .haitraingot{
+    font-size: 35px;
+    font-weight: bold;
+    color: #58595B;
+    text-align: center;
+    font-family: roboto;
+    padding: 20px  0 10px 0;
+    
+}
+.intro .text{
+    color:#58595B ;
+    font-size: 16px;
+    font-family: roboto;
+    line-height: 25px;
+    text-align: center;
+}
+.selection{
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.product{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 7px;
+    width: 23%;
+    margin-left: 20px;
+    background-color:#ffffff ;
+    margin-bottom: 40px;
+
+}
+.product .new img{
+    width: 70%;
+}
+.product .item img{
+    width: 100%;
+    padding: 12px;
+}
+
+.new{
+    position:absolute ;
+    top: 15px;
+    left: 15px;
+    z-index: 99999999;
+}
+.product .name{
+    font-size: 14px;
+    font-family: roboto;
+    color: #5D6160;
+    text-align: center;
+}
+.product .price{
+    font-size: 14px;
+    font-family: roboro;
+    color: #E49987;
+    font-weight: bold;
+    font-family: roboto;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.information{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.service{
+    margin-right: 20px;
+    margin-top: 30px;
+    margin: 0 auto;
+    
+}
+.service p{
+    font-size: 15px;
+    font-family: roboto;
+    margin-bottom: 30px;
+}
+.service img {
+    width: 100%;
+    border: 1px solid #F4F4F4;
+    padding: 30px;
+    border-radius: 70px;
+    margin-bottom: 20px;
+}
+.service .img{
+    width: 60%;
+    margin: 0 auto;
+}
+.service .pink{
+    background-color: #FFF4F4;
+}
+.service .blue{
+    background-color: #F0FFFF;
+}
+.service .yellow{
+    background-color: #FFFBE6;
+}
+.service .purple{
+    background-color: #F1F2FF;
+}
+.information1{
+    width: 1200px;
+    margin: 30px auto;
+    display: flex;
+}
+.information1 img{
+    width: 100%;
+    padding-top: 15px;
+}
+.introduction{
+    width: 23%;
+    margin-left: 20px;
+}
+.introduction .title{
+    color:#58595B ;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: roboto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+.introduction p{
+    color:#58595B ;
+    font-size: 16px;
+    font-family: roboto;
+    padding-top: 15px;
+}
+footer{
+    height: 100px;
+    background-color: #E49987;
+    display: flex;
+    font-size: 40px;
+    color: #ffffff;
+    font-family: roboto;
+    justify-content: center;
+    align-items: center;
+}
+footer img{
+    width: 70%;
+}

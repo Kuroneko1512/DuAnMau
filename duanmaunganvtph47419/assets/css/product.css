@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #ffffff;
+}
+header{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo img{
+    width: 55%;
+}
+.stuff{
+    display: flex;
+}
+.user{
+    display: flex;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.user1{
+    display: flex;
+    border: 1px solid orange;
+    border-radius: 5px;
+    background-color: #FFF9E3;
+    padding: 7px;
+}
+.user1 p{
+    font-family: roboto;
+    font-size: 15px;
+    padding-right: 10px;
+}
+.user a{
+    font-family: roboto;
+    font-size: 15px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+header form .search{
+    width: 400px;
+    height: 35px;
+    border: 1px solid white;
+    position: relative;
+}
+header form .search input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 10px;
+    background-color: #F4F4F4;
+    border-radius: 7px;
+}
+header form .search button{
+    border: none;
+    position: absolute;
+    top: 33%;
+    right: 15px;
+}
+.fa-search{
+    margin: 5%;
+}
+.menu{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+} 
+nav ul .parent .fa-angle-down{
+    padding-left: 5px ;
+    font-size: 16px;
+    font-weight: bold;
+}
+nav ul li{
+    list-style: none;
+    align-items: center;
+    height: 50px;
+    padding: 0 13px;
+}
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: #58595B;
+    font-family: roboto;
+    font-size: 15px;
+}
+.parent{
+    position: relative;
+}
+.child{
+    position: absolute;
+    z-index: 999999;
+    top: 50px;
+    height: auto;
+    width: 250px;
+    display: block;
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    border: 1px solid #EBEBEB ;
+    border-top: none;
+    box-shadow: 0 0 1px gray;
+    text-align: left;
+    color: black;
+    font-family: roboto;
+}
+.parent:hover .child{
+    opacity: 1;
+    visibility: visible;
+}
+.parent a:hover{
+    color: #F1CBB8;
+}
+.child li {
+    display: block;
+    height: 45px;
+}
+.child .first{
+    border-top: 2px solid #F2AD72;
+}
+.child li a{
+    color: black;
+    font-size: 13px;
+}
+.child li a:hover{
+    color: #F2AD72;
+    font-family: roboto;
+    font-weight: bold;
+}
+.child li:hover{
+    background-color: #FEFAF1;
+}
+.product{
+    width: 1200px;
+    margin: 10px auto ;
+    justify-content: space-between;
+}
+.content{
+    display: flex;
+}
+.content .item{
+    font-size: 30px;
+    margin-left: 80px;
+}
+.content .detail{
+    margin-left: 130px;
+    margin-top: 10px;
+}
+.detail .name{
+    font-size: 25px;
+    color: #595A5C;
+    font-family: roboto;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.detail .status{
+    color: #DB9087;
+    font-size: 15px;
+    font-family: roboto;
+    padding-bottom: 20px;
+}
+.detail .code{
+    color: #898483;
+    font-size: 15px;
+    font-family: roboto;
+    padding-bottom: 20px;
+}
+.detail .price{
+    display: flex;
+}
+.detail .price .gia{
+    color: #898483;
+    font-size: 15px;
+    font-family: roboto;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-top: 5px;
+}
+.detail .price .tien{
+    color: #DB9087;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: roboto;
+    padding-bottom: 20px;
+}
+form label{
+    color: #898483;
+    font-size: 15px;
+    font-family: roboto;
+}
+.detail form input{
+    width: 200px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #DB9087;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: roboto;
+}
+.intro_product{
+    width: 1200px;
+    margin: 30px auto;
+    background-color:#F7F8F9 ;
+    padding-bottom: 30px;
+}
+.intro_product .intro .title{
+    color: #585969;
+    font-size: 20px;
+    font-family: roboto;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.intro_product .intro .text{
+    color: #585969;
+    font-size: 16px;
+    font-family: roboto;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.danhgia{
+    margin: 30px auto;
+    width: 1200px;
+}
+.danhgia .h1{
+    color: #58595B;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: roboto;
+}
+
+.hinhanh{
+    display: flex;
+}
+.hinhanh form{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.hinhanh form input{
+    padding: 10px 20px; 
+    background-color: #ffffff;
+    border: none;
+    border: 1px solid gray;
+    margin-right: 10px;
+}
+.sanpham{
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.product1{
+    border: 1px solid white;
+    border-radius: 7px;
+    width: 23%;
+    background-color:#ffffff ;
+    margin-bottom: 40px;
+
+}
+
+.product1 .item img{
+    width: 100%;
+}
+.product1 .name{
+    font-size: 14px;
+    font-family: roboto;
+    color: #5D6160;
+    text-align: center;
+    padding-top: 10px;
+}
+.product1 .price{
+    font-size: 14px;
+    font-family: roboro;
+    color: #E49987;
+    font-weight: bold;
+    font-family: roboto;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.information1{
+    width: 1200px;
+    margin: 30px auto;
+    display: flex;
+}
+.information1 img{
+    width: 100%;
+    padding-top: 15px;
+}
+.introduction{
+    width: 23%;
+    margin-left: 20px;
+}
+.introduction .title{
+    color:#58595B ;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: roboto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+.introduction p{
+    color:#58595B ;
+    font-size: 16px;
+    font-family: roboto;
+    padding-top: 15px;
+}
+footer{
+    height: 100px;
+    background-color: #E49987;
+    display: flex;
+    font-size: 40px;
+    color: #ffffff;
+    font-family: roboto;
+    justify-content: center;
+    align-items: center;
+}
+footer img{
+    width: 70%;
+}
