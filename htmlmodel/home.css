@@ -37,7 +37,7 @@ body {
 
 /* header start*/
 header {
-    width: calc(100% - 15%);
+    width: calc(100% - 10%);
     margin: 0 auto;
     display: flex;
     height: 80px;
@@ -47,11 +47,12 @@ header {
     /* logo */
     .logo {
         padding-left: 5px;
+
         img {
             width: 100%;
         }
     }
-    
+
 
     /* form */
     form {
@@ -112,7 +113,7 @@ header {
                 border: 1px solid #17a2b8;
                 background-color: #FFF9E3;
 
-                .fa {
+                .fa-regular {
                     color: #17a2b8;
                 }
 
@@ -164,6 +165,361 @@ header {
 
 /* header end */
 
+/* nav start */
+nav {    
+
+    .horizontal{
+        background-color: #17a2b8;
+
+        .horizontal-menu {
+            width: calc(100% - 10%);
+            margin: 0 auto;
+        }
+    
+        .horizontal-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+    
+        .horizontal-menu ul .nav-item {
+            position: relative;
+        }
+    
+        .horizontal-menu ul .nav-item a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            /* color: #fff; */
+            color: inherit;
+            transition: background-color 0.3s ease;
+        }
+    
+        .horizontal-menu ul .nav-item a:hover {
+            background-color: #17a2b8;
+        }
+    
+        /* Định dạng cho dropdown menu cấp 1 */
+        .horizontal-menu ul .nav-item ul.menu-dropdown-lv1 {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            min-width: 200px;
+            display: none;
+            z-index: 1;
+        }
+    
+        .horizontal-menu ul .nav-item:hover>ul.menu-dropdown-lv1 {
+            display: block;
+        }
+    
+        .horizontal-menu ul .nav-item ul.menu-dropdown-lv1 .nav-dropdown-item-lv1 {
+            position: relative;
+        }
+    
+        .horizontal-menu ul .nav-item ul.menu-dropdown-lv1 .nav-dropdown-item-lv1 a {
+            color: #000;
+            padding: 10px 15px;
+        }
+    
+        .horizontal-menu ul .nav-item ul.menu-dropdown-lv1 .nav-dropdown-item-lv1 a:hover {
+            background-color: #f5f5f5;
+        }
+    
+        /* Định dạng cho dropdown menu cấp 2 */
+        .horizontal-menu ul .nav-item ul.menu-dropdown-lv1 .nav-dropdown-item-lv1 ul.menu-dropdown-lv2 {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            min-width: 200px;
+            display: none;
+        }
+    
+        .horizontal-menu ul .nav-item ul.menu-dropdown-lv1 .nav-dropdown-item-lv1:hover>ul.menu-dropdown-lv2 {
+            display: block;
+        }
+    
+        /* Định dạng cho biểu tượng dropdown */
+        .horizontal-menu ul .nav-item a i {
+            margin-left: 5px;
+        }
+
+    }
+
+}
+
+/* nav end */
+
+/* footer start */
+footer {
+    background-color: #17a2b8;
+    height: auto;
+    /* footer-area start */
+    .footer-area{
+
+        width: calc(100% - 10%);
+        margin: 0 auto;
+        padding-top: 10px;
+
+        .footer-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .footer-col {
+            flex-basis: 30%;
+            padding: 10px;
+        }
+
+        .footer-subcol {
+            /* flex-basis: 33.33%; */
+            padding: 10px;
+        }
+
+        .footer-heading {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .footer-address {
+            font-style: normal;
+        }
+
+        .footer-icon {
+            margin-right: 5px;
+        }
+
+        .footer-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-link {
+            display: block;
+            /* color: #333;
+            text-decoration: none; */
+            padding: 5px 0;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #666;
+        }
+
+        .footer-form {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .footer-input {
+            flex-grow: 1;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .footer-btn {
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .footer-btn:hover {
+            background-color: #666;
+        }
+
+        .footer-subheading {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .footer-social {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-social-link {
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            background-color: #ccc;            
+            font-size: 35px;
+            display: inline-block;
+            text-align: center;
+            line-height: 54px;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-social-link:hover {
+            color: #6f42c1;
+        }
+
+        .footer-copyright {
+            border-top: 1px solid #fff;
+            border-color: rgba(256, 256, 256, .35);
+
+            p{
+                font-size: 20px;
+                font-weight: bold;
+                text-align: left;
+                padding: 20px 0;
+                line-height: 20px;
+            }            
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .footer-col {
+                flex-basis: 50%;
+            }
+
+            .footer-subcol {
+                flex-basis: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-col {
+                flex-basis: 100%;
+            }
+        }
+    }
+
+    /* footer-area end */
+
+    
+    
+}
+
+/* footer end */
+
+
+/* main start */
+main {
+    width: calc(100% - 10%);
+    margin: 0 auto;
+
+    /* services start */
+    .services {
+        padding: 20px 0;
+    }
+
+    .services-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .service {
+        flex-basis: 23%;
+        background-color: #fff;
+        padding: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-icon {
+        color: #17a2b8;
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .service-heading {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        margin: 0;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .service {
+            flex-basis: 48%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .service {
+            flex-basis: 100%;
+        }
+    }
+
+    /* services end */
+}
+
+aside{
+    .vertical-menu-area {
+        width: 250px; /* Đặt chiều rộng cho menu */
+    }
+    
+    .vertical-menu-area nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .vertical-menu-area nav ul li a {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #333;
+        transition: background-color 0.3s ease;
+    }
+    
+    .vertical-menu-area nav ul li a:hover {
+        background-color: #f5f5f5;
+    }
+    
+    .vertical-menu-area nav ul li ul {
+        display: none; /* Ẩn các dropdown menu ban đầu */
+    }
+    
+    .vertical-menu-area nav ul li ul li a {
+        padding-left: 30px; /* Thêm padding cho các mục trong dropdown menu */
+    }
+    
+    .vertical-menu-area nav ul li ul li ul li a {
+        padding-left: 45px; /* Thêm padding cho các mục trong dropdown menu cấp 2 */
+    }
+    
+    /* Định dạng cho biểu tượng dropdown */
+    .vertical-menu-area nav ul li a i {
+        float: right;
+        margin-top: 3px;
+    }
+    
+    .vertical-menu-area nav ul li ul.show {
+        display: block;
+    }
+    
+}
+/* main end */
 .underline-effect {
     display: inline-block;
     position: relative;
@@ -189,4 +545,86 @@ header {
 
 .underline-effect:hover::after {
     width: 100%;
+}
+
+/*  */
+.horizontal-menu-demo {
+    width: calc(100% - 10%);
+    margin: 0 auto;
+    /* Định dạng cho menu chính */
+    /* background-color: #fff; */
+    color: #000;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    ul li {
+        position: relative;
+    }
+
+    ul li a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: #000;
+        transition: background-color 0.3s ease;
+    }
+
+    ul li a:hover {
+        background-color: #17a2b8;
+    }
+
+    /* Định dạng cho dropdown menu cấp 1 */
+    ul li ul.menu-dropdown-lv1 {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        min-width: 200px;
+        display: none;
+        z-index: 1;
+    }
+
+    ul li:hover>ul.menu-dropdown-lv1 {
+        display: block;
+    }
+
+    ul li ul.menu-dropdown-lv1 li {
+        position: relative;
+    }
+
+    ul li ul.menu-dropdown-lv1 li a {
+        color: #333;
+        padding: 10px 15px;
+    }
+
+    ul li ul.menu-dropdown-lv1 li a:hover {
+        background-color: #f5f5f5;
+    }
+
+    /* Định dạng cho dropdown menu cấp 2 */
+    ul li ul.menu-dropdown-lv1 li ul.menu-dropdown-lv2 {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        min-width: 200px;
+        display: none;
+    }
+
+    ul li ul.menu-dropdown-lv1 li:hover>ul.menu-dropdown-lv2 {
+        display: block;
+    }
+
+    /* Định dạng cho biểu tượng dropdown */
+    ul li a i {
+        margin-left: 5px;
+    }
+
 }
