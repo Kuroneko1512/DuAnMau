@@ -8,8 +8,14 @@
     <!-- icon library -->
     <link rel="shortcut icon" href="./img/NekoSports_logo.svg" type="image/svg+xml">
 
+
+
+    <!-- css library -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./product_detail.css">
 </head>
 <body>
     <div class="container">
@@ -328,167 +334,113 @@
         </nav>
         <!-- nav end -->
 
-        <!-- Banner Start -->
-        <section class="banner">
-            <div class="banner-container">
-                <div class="banner-slide">
-                    <img id="banner_img" src="" alt="Banner Image">
-                </div>
-                <a class="prev bannerL"><i class="fa-solid fa-angle-double-left"></i></a>
-                <a class="next bannerR"><i class="fa-solid fa-angle-double-right"></i></a>
+        <!-- Breadcrumb Start -->
+        <section class="breadcrumb">
+            <div class="breadcrumb-container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb-list">
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a href="#">Sản phẩm</a></li>
+                        <li class="breadcrumb-item"><a href="">Giày chạy bộ</a></li>
+                        <li class="breadcrumb-item breadcrumb-active">Saucony Triumph</li>
+                    </ol>
+                </nav>
             </div>
-            <div id="dots-container" class="dots-container"></div>
         </section>
-        <!-- Banner End -->
-
+        <!-- Breadcrumb End -->
+        
         <!-- main start -->
         <main>
             <!-- body start -->
             <div class="body">
-                
-                <!-- Category Start -->
-                <section class="category">
-                    <section class="category-section">
-                        <h2 class="section-title">
-                            <span class="title-bg">Categories</span>
-                        </h2>
-                        <div class="category-grid">
-                            <div class="category-item">
-                                <a href="#">
-                                    <div class="category-img">
-                                        <img src="./img/sp1.jpg" alt="Category Image">
+                    
+                <section class="product-page">
+                    
+                    <div class="content-product-area">
+                        <section class="product-section">
+                            <div class="product-detail-area">
+                                <div class="detail-left">
+                                    <div class="product-image">
+                                        <img src="./img/Products/S20964-213_1.jpeg" alt="Product Image">
                                     </div>
-                                    <div class="category-info">
-                                        <h6>Category Name</h6>
-                                        <p>100 Products</p>
+                                    <div class="product-thumbnails">
+                                        <div class="thumbnail">
+                                            <img src="./img/Products/S20964-213_1.jpeg" alt="Thumbnail 1">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="./img/Products/S20964-213_2.jpeg" alt="Thumbnail 2">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="./img/Products/S20964-213_3.jpeg" alt="Thumbnail 1">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="./img/Products/S20964-213_4.jpeg" alt="Thumbnail 2">
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="./img/Products/S20964-213_5.jpeg" alt="Thumbnail 1">
+                                        </div>
+
+                                        <!-- Thêm các thumbnail khác tại đây -->
                                     </div>
-                                </a>
+                                </div>
+                                <div class="detail-right">                                    
+                                    <h2 class="product-name">Tên Sản Phẩm</h2>
+                                    <div class="product-rating">
+                                        <span class="rating-stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                        </span>
+                                        <span class="rating-count">(20 đánh giá)</span>
+                                    </div>
+                                    <p class="product-category">Loại Sản Phẩm</p>
+                                    <p class="product-code">Mã Sản Phẩm: ABC123</p>
+                                    <div class="product-colors">
+                                        <span>Màu sắc:</span>
+                                        <div class="color-options">
+                                            <div class="color-option" style="background-color: red;"></div>
+                                            <div class="color-option" style="background-color: blue;"></div>
+                                            <!-- Thêm các tùy chọn màu sắc khác tại đây -->
+                                        </div>
+                                    </div>
+                                    <div class="product-sizes">
+                                        <span>Kích cỡ:</span>
+                                        <div class="size-options">
+                                            <div class="size-option">S</div>
+                                            <div class="size-option">M</div>
+                                            <div class="size-option">L</div>
+                                            <!-- Thêm các tùy chọn kích cỡ khác tại đây -->
+                                        </div>
+                                    </div>
+                                    <div class="product-quantity">
+                                        <span>Số lượng:</span>
+                                        <input type="number" value="1" min="1">
+                                        <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="category-item">
-                                <a href="#">
-                                    <div class="category-img">
-                                        <img src="./img/sp1.jpg" alt="Category Image">
+                            <div class="info-tab">
+                                <div class="nav-tabs">
+                                    <a href="#" class="tab-link active">Thông tin sản phẩm</a>
+                                    <a href="#" class="tab-link">Bình luận và đánh giá</a>
+                                </div>
+                                <div class="nav-tab-content">
+                                    <div class="tab-pane tab-active tab-show" id="tab-pane-1">
+                                        <p>Nội dung thông tin sản phẩm tại đây...</p>
                                     </div>
-                                    <div class="category-info">
-                                        <h6>Category Name</h6>
-                                        <p>100 Products</p>
+                                    <div class="tab-pane" id="tab-pane-2">
+                                        <p>Nội dung bình luận và đánh giá tại đây...</p>
                                     </div>
-                                </a>
+                                </div>
                             </div>
-                            <div class="category-item">
-                                <a href="#">
-                                    <div class="category-img">
-                                        <img src="./img/sp1.jpg" alt="Category Image">
-                                    </div>
-                                    <div class="category-info">
-                                        <h6>Category Name</h6>
-                                        <p>100 Products</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="category-item">
-                                <a href="#">
-                                    <div class="category-img">
-                                        <img src="./img/sp1.jpg" alt="Category Image">
-                                    </div>
-                                    <div class="category-info">
-                                        <h6>Category Name</h6>
-                                        <p>100 Products</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="category-item">
-                                <a href="#">
-                                    <div class="category-img">
-                                        <img src="./img/sp1.jpg" alt="Category Image">
-                                    </div>
-                                    <div class="category-info">
-                                        <h6>Category Name</h6>
-                                        <p>100 Products</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="category-item">
-                                <a href="#">
-                                    <div class="category-img">
-                                        <img src="./img/sp1.jpg" alt="Category Image">
-                                    </div>
-                                    <div class="category-info">
-                                        <h6>Category Name</h6>
-                                        <p>100 Products</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="category-item">
-                                <a href="#">
-                                    <div class="category-img">
-                                        <img src="./img/sp1.jpg" alt="Category Image">
-                                    </div>
-                                    <div class="category-info">
-                                        <h6>Category Name</h6>
-                                        <p>100 Products</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="category-item">
-                                <a href="#">
-                                    <div class="category-img">
-                                        <img src="./img/sp1.jpg" alt="Category Image">
-                                    </div>
-                                    <div class="category-info">
-                                        <h6>Category Name</h6>
-                                        <p>100 Products</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- Các category-item khác -->
-                        </div>
-                    </section>
+                        </section>
+                    </div>
+
                 </section>
                 
-                <!-- Category End -->
-
-                <!-- New Products Start -->
-                <section class="new-products">
-                    <section class="product-section">
-                        <h2 class="section-title">
-                            <span class="title-bg">News Products</span>
-                        </h2>
-                        <div class="product-grid">
-                            <div class="product-item">
-                                <div class="product-img">
-                                    <img src="./img/Products/S20964-213_1.jpeg" alt="Product Image">
-                                    <div class="product-overlay">
-                                        <div class="product-actions">
-                                            <a href="#" class="action-btn"><i class="fa fa-shopping-cart"></i></a>
-                                            <a href="#" class="action-btn"><i class="far fa-heart"></i></a>
-                                            <a href="#" class="action-btn"><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>                                
-                                </div>
-                                <div class="product-info">
-                                    <a href="#" class="product-name">Product Name Goes Here</a>
-                                    <div class="product-price">
-                                        <span class="price">$123.00</span>
-                                        <span class="old-price">$123.00</span>
-                                    </div>
-                                    <div class="product-rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <span>(99)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Các sản phẩm khác -->
-                        </div>
-                    </section>
-                </section>                
-                <!-- New Products End -->
-
+                
                 <!-- Services start -->
                 <section class="services">
                     <div class="services-container">
@@ -519,50 +471,10 @@
                     </div>
                 </section>
                 <!-- Services end -->
-
-                <!-- Best Sales Products Start -->
-                <section class="best-sales-products">
-                    <section class="product-section">
-                        <h2 class="section-title">
-                            <span class="title-bg">Best Sales Products</span>
-                        </h2>
-                        <div class="product-grid">
-                            <div class="product-item">
-                                <div class="product-img">
-                                    <img src="./img/Products/S20964-215_1.jpeg" alt="Product Image">
-                                    <div class="product-overlay">
-                                        <div class="product-actions">
-                                            <a href="#" class="action-btn"><i class="fa fa-shopping-cart"></i></a>
-                                            <a href="#" class="action-btn"><i class="far fa-heart"></i></a>
-                                            <a href="#" class="action-btn"><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>                                
-                                </div>
-                                <div class="product-info">
-                                    <a href="#" class="product-name">Product Name Goes Here</a>
-                                    <div class="product-price">
-                                        <span class="price">$123.00</span>
-                                        <span class="old-price">$123.00</span>
-                                    </div>
-                                    <div class="product-rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <span>(99)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Các sản phẩm khác -->
-                        </div>
-                    </section>
-                </section>  
-                <!-- Best Sales Products End -->
+                
             </div>
             <!-- body end -->
-
+            
             <!-- Vendor Carousel Start -->
             <div class="vendor-carousel">
                 <div class="item"><img src="./img/Brand/brands_1.jpeg" alt=""></div>
@@ -589,6 +501,7 @@
                 <div class="item"><img src="./img/Brand/brands_22.jpeg" alt=""></div>                
             </div>
             <!-- Vendor Carousel End -->
+
         </main>
         <!-- main end -->
 
@@ -668,13 +581,12 @@
         <!-- footer end -->
     </div>
 
-    <!-- Back to Top -->
+    <!-- Back to top -->
     <a href="#" class="back-to-top" id="scrollToTopBtn" hidden>
         <i class="fa-solid fa-angles-up"></i>
     </a>
     <!-- js library -->
     <script src="./home.js"></script>
-    <script src="./slide.js"></script>
     <script src="./vendor_carousel.js"></script>
 </body>
 </html>
